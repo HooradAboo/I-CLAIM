@@ -56,6 +56,7 @@ The JSON file should have a top-level structure with keys matching the categorie
     "Lips": ["smiling", "neutral"]
   }
 }
+```
 
 Using the flux1.1 pro API:
 
