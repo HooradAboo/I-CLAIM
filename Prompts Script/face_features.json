@@ -1,0 +1,179 @@
+{
+    "Shape": {
+        "Face": [
+            "oval",
+            "round",
+            "square",
+            "heart-shaped",
+            "diamond-shaped",
+            "triangular",
+            "oblong",
+            "rectangular",
+            "pear-shaped"
+        ],
+        "Eye": [
+            "almond-shaped",
+            "round",
+            "hooded",
+            "deep-set",
+            "wide-set",
+            "close-set",
+            "monolid",
+            "upturned",
+            "downturned"
+        ],
+        "Eyebrow": [
+            "arched",
+            "straight",
+            "rounded",
+            "bushy",
+            "thin",
+            "sparse"
+        ],
+        "Nose": [
+            "straight",
+            "hooked",
+            "upturned",
+            "aquiline",
+            "button",
+            "flat",
+            "wide",
+            "narrow"
+        ],
+        "Lips": [
+            "full",
+            "thin",
+            "heart-shaped",
+            "wide",
+            "bow-shaped",
+            "asymmetrical"
+        ],
+        "Cheek": [
+            "high cheekbones",
+            "prominent",
+            "sunken",
+            "round",
+            "soft"
+        ],
+        "Chin": [
+            "pointed",
+            "square",
+            "rounded",
+            "prominent",
+            "cleft"
+        ],
+        "Hairline": [
+            "straight",
+            "receding",
+            "widow’s peak",
+            "rounded"
+        ]
+    },
+    "Structure": {
+        "Eye": [
+            "large",
+            "small",
+            "average",
+            "prominent",
+            "deep-set",
+            "protruding",
+            "narrow"
+        ],
+        "Eyebrow": [
+            "thick",
+            "thin",
+            "well-defined",
+            "unkempt"
+        ],
+        "Nose": [
+            "small",
+            "large",
+            "average",
+            "prominent"
+        ],
+        "Jawline": [
+            "strong",
+            "angular",
+            "soft",
+            "tapered"
+        ]
+    },
+    "Texture & Features": {
+        "Skin Texture": [
+            "smooth",
+            "rough",
+            "freckled",
+            "wrinkled",
+            "scarred"
+        ],
+        "Skin Features": [
+            "clear",
+            "blemished",
+            "pockmarked",
+            "rosy",
+            "radiant"
+        ],
+        "Lips": [
+            "defined cupid’s bow",
+            "even",
+            "chapped",
+            "smooth"
+        ],
+        "Cheek": [
+            "dimpled",
+            "freckled",
+            "smooth",
+            "Rosy",
+            "flushed"
+        ]
+    },
+    "Color": {
+        "Eye": [
+            "blue",
+            "green",
+            "brown",
+            "hazel",
+            "gray",
+            "amber"
+        ],
+        "Skin Tone": [
+            "fair",
+            "light",
+            "medium",
+            "olive",
+            "tan",
+            "dark",
+            "deep"
+        ],
+        "Skin Undertones": [
+            "pink", 
+            "rosy", 
+            "bluish",
+            "yellow", 
+            "golden", 
+            "peachy",
+            "a mix of warm and cool undertones"
+        ]
+    },
+    "Expression": {
+        "Eye": [
+            "piercing",
+            "warm",
+            "kind",
+            "intense",
+            "sleepy",
+            "mischievous"
+        ],
+        "Eyebrow": [
+            "dramatic",
+            "soft",
+            "angular"
+        ],
+        "Lips": [
+            "Smiling",
+            "pouty",
+            "serious",
+            "downturned"
+        ]
+    }
+}
