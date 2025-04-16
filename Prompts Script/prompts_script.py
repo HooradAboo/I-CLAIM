@@ -1,4 +1,5 @@
 import os
+import requests
 import csv
 import json
 import random
@@ -6,10 +7,12 @@ import base64
 import fal_client
 from fal_client import InProgress
 
+
+
 # 1) Configs & Paths (unchanged) ...
 MODEL_ID = "FLUX"
 OUTPUT_ROOT = "ProjectRoot"
-NUM_PROMPTS = 2
+NUM_PROMPTS = 1
 NUM_EXPRESSIONS = 20
 SEED_PAD = 6
 PROMPT_PAD = 5
@@ -69,25 +72,46 @@ def on_queue_update(update):
 
 def generate_flux_image(prompt):
     """
-    Make the actual call to fal_client.subscribe.
-    Returns raw bytes from the first image in the result.
-    Adjust if the structure is different in your actual usage.
+    Calls fal_client.subscribe, which returns a JSON object containing a URL to the image.
+    We then download that image from the URL and return the raw bytes.
     """
-    # 1) Subscribe request
+    # 1) Subscribe to the model
     result = fal_client.subscribe(
-        model_id="fal-ai/flux-pro/v1.1-ultra",   # per the doc
-        arguments={"prompt": prompt},           # add more arguments if needed
+        "fal-ai/flux-pro/v1.1-ultra",  # model as first arg
+        arguments={"prompt": prompt},
         with_logs=True,
         on_queue_update=on_queue_update
     )
 
-    # 2) We assume 'result' is a dict with a key "images" that is a list of base64 strings
-    if "images" not in result or not result["images"]:
-        raise ValueError("No images found in fal_client response.")
+    print("[DEBUG] Full result:", result)
 
-    # 3) Decode the first image
-    base64_image = result["images"][0]
-    image_bytes = base64.b64decode(base64_image)
+    # 2) Ensure "images" exists
+    if "images" not in result or not result["images"]:
+        raise ValueError("No images found in the fal_client response.")
+
+    # 3) The first image is a dict with a 'url' key
+    first_image_dict = result["images"][0]
+    print("[DEBUG] First image dict:", first_image_dict)
+
+    # We expect something like:
+    # {
+    #   'url': 'https://fal.media/files/...',
+    #   'width': 2752,
+    #   'height': 1536,
+    #   'content_type': 'image/jpeg'
+    # }
+
+    if "url" not in first_image_dict:
+        raise ValueError("No 'url' key found for the image. Cannot download.")
+
+    image_url = first_image_dict["url"]
+
+    # 4) Download the image from this URL
+    response = requests.get(image_url)
+    response.raise_for_status()  # Raises an error if the download failed
+    image_bytes = response.content  # This is the raw JPEG/PNG/etc. data
+
+    # 5) Return the raw bytes
     return image_bytes
 
 def main():
@@ -96,7 +120,7 @@ def main():
 
     prompts_csv_path = os.path.join(model_dir, "prompts.csv")
     prompts_csv_exists = os.path.isfile(prompts_csv_path)
-    with open(prompts_csv_path, "a", newline="", encoding="utf-8") as prompts_csv:
+    with open(prompts_csv_path, "w", newline="", encoding="utf-8") as prompts_csv:
         writer = csv.writer(prompts_csv)
         if not prompts_csv_exists:
             writer.writerow(["PromptID", "SeedID", "Prompt"])
@@ -114,7 +138,7 @@ def main():
             writer.writerow([prompt_str, seed_str, full_prompt_text])
 
             # Create subfolder
-            folder_name = f"{seed_str}_{prompt_str}"
+            folder_name = f"SID{seed_str}_PID{prompt_str}"
             prompt_folder = os.path.join(model_dir, folder_name)
             os.makedirs(prompt_folder, exist_ok=True)
 
@@ -138,10 +162,10 @@ def main():
                         image_data = generate_flux_image(final_prompt_for_image)
                     except Exception as e:
                         print(f"Error generating image for prompt: {final_prompt_for_image}\n{e}")
-                        continue
+                        
 
                     # Save to .jpg
-                    image_filename = os.path.join(prompt_folder, f"{expr_str}.jpg")
+                    image_filename = os.path.join(prompt_folder, f"exp{expr_str}.jpg")
                     with open(image_filename, "wb") as img_file:
                         img_file.write(image_data)
 
