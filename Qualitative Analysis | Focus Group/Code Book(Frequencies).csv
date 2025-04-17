@@ -1,0 +1,139 @@
+Code,Hoorad,Anam,Joshua
+average person,0,0,1
+Aware of potential risks,0,0,1
+Data protection(Personal),0,0,1
+High confidence in ability to learn cybersecurity practices,0,0,1
+MFA,2,2,2
+PIN,2,2,2
+URL spoofing,1,1,0
+access management,3,3,3
+active digital footprint,3,3,3
+attack knowledge (avoiding),3,3,1
+attack knowledge (handling),1,1,1
+attack knowledge (identifying),3,3,3
+average person (avoiding attacks),1,0,0
+average person (awareness of safe cybersecurity practices),7,7,2
+average person (data managing),3,3,2
+average person (good password practices),2,2,1
+average person (handling threats),1,1,1
+average person (how to secure information),1,1,1
+average person (identifying attacks),1,0,0
+average person (identifying threats),5,5,2
+average person (learning by experiances),2,2,1
+average person (securing from threats),2,2,1
+avoid security question (hard to memorize),2,2,2
+aware of safe cybersecurity practices,2,2,2
+banking protection,10,10,8
+challenges in data privacy,1,1,1
+clicking on suspicious links,1,1,0
+common sense on not sharing personal information,4,4,4
+companies being negligent,1,1,1
+complex password,3,3,3
+complexity of internet,1,1,1
+confidentiality,2,2,2
+cyber-threat awareness?,0,0,1
+cybersecurity definition (data management),1,1,1
+cybersecurity definition (data protection),1,1,1
+cybersecurity definition (online safety),1,1,3
+cybersecurity definition (online security),2,2,0
+cybersecurity definition (personal data protection),2,2,2
+cybersecurity definition (protect data),2,2,0
+data management,4,4,4
+data protection (company),2,2,2
+data protection (personal),15,15,15
+data transparency,8,8,7
+different password,9,9,8
+education in school (general knowledge),1,1,1
+education in school (secure password),2,3,3
+education in school (technical knowledge),2,2,2
+education through media,1,1,1
+effort toward secure accounts,1,1,1
+face recognition,2,2,2
+fingerprint,4,4,4
+handling threat,1,1,1
+high confidence in avoiding cyber-attack,3,3,2
+high confidence in managing personal data,1,1,1
+high confidence in password generation,2,2,2
+high confidence in protecting personal information,6,6,5
+high confidence in technical knowledge,2,2,1
+identity protection in different countries,1,1,0
+identity theft,1,1,1
+ignoring terms and conditions,1,1,1
+issues with face recognition (easy to copy),1,1,1
+issues with face recognition (occlusion),1,1,1
+issues with fingerprint (general),1,1,1
+issues with fingerprint (personal),1,1,1
+issues with password (hard to memorize),3,3,2
+issues with password manager apps (easy to lose access),1,1,1
+issues with voice recognition (technical),1,1,1
+keeping system updated,1,1,1
+lack of attack knowledge (handling),1,1,1
+lack of discernment what to share online,1,1,1
+lack of general cybersecurity education,1,1,1
+lack of general cybersecurity education in school,2,2,2
+lack of general cybersecurity knowledge,5,5,5
+lack of interdisciplinary cybersecurity fields,2,2,2
+learned hard way (first hand),2,1,0
+learned hard way (second hand),4,5,5
+low confidence (ignoring terms and conditions),1,1,1
+low confidence (technical knowledge),3,3,3
+low confidence (uncertainty about cyber-risks),1,1,1
+low confidence in SSN protection,1,1,0
+low confidence in banking protection,1,1,0
+low confidence in general cybersecurity practices,1,1,1
+low confidence in personal data protection,1,1,0
+low confidence in technical knowledge,3,3,2
+malware experience,1,1,1
+neglectfulness because of convenience,0,0,5
+not sure about password management,1,1,1
+not understanding hacker's intention,1,1,1
+open to learn,1,1,0
+password,2,2,2
+password attack experience,1,1,1
+password management (safe),1,1,1
+password management (unsafe),2,2,1
+password recovery,1,1,1
+peer influence,2,1,0
+phishing experience,7,7,6
+preferred ? over security,1,0,0
+preferred biometrics over password,1,1,1
+preferred convenience over security (MFA),5,5,4
+preferred convenience over security (antivirus),1,1,0
+preferred convenience over security (passwords),2,2,0
+preferred convenience over security (terms and conditions),1,1,0
+preferred face recognition,1,1,1
+preferred face recognition (easy to use),1,1,1
+preferred face recognition (reliability),1,1,1
+preferred face recognition over password,1,1,1
+preferred fingerprint,1,1,1
+preferred fingerprint (easy to use),3,3,3
+preferred fingerprint (hard to copy),1,1,1
+preferred fingerprint (reliability),1,1,1
+preferred password over biometric (not accessible),1,1,1
+preferred password over face recognition  (occlusion),1,1,1
+preferred security over convenience (MFA),4,4,3
+preferred security over convenience (password),1,1,1
+preferred token (easy to use),2,2,2
+random password,1,1,0
+repeated password,6,6,6
+risk prevention (from threats),6,6,6
+risk prevention (secured internet),1,1,1
+security definition (access management),1,1,1
+security definition (confidentiality),1,1,1
+security definition (data protection),1,1,1
+security definition (safe from threats),1,1,1
+seeking out cyber knowledge,1,1,2
+simple password,1,1,1
+simple password (unimportant account),1,1,1
+technical knowledge is not practical,5,5,5
+third-party payment,4,4,2
+token,3,3,2
+training in workplace,2,2,2
+unaware of how to be cybersafe,1,1,1
+unaware of security risks,5,5,6
+underestimating risk,3,3,3
+understand importance of MFA but inconvenient,3,3,3
+unsafe practices (downloading),1,1,1
+unsafe practices (not using antiviruses),1,1,0
+updating password,2,2,2
+user blindness,2,2,0

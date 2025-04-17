@@ -1,0 +1,148 @@
+,Code,Description,Hoorad,Anam,Joshua
+0,Aware of potential risks,,0.0,0.0,1.0
+1,Data protection(Personal),,0.0,0.0,1.0
+2,High confidence in ability to learn cybersecurity practices,,0.0,0.0,1.0
+3,Identity Theft,,,,
+4,MFA,Use of multi-factor authentication systems.,2.0,2.0,2.0
+5,PIN,Using PIN or passcode as an authentication method.,2.0,2.0,2.0
+6,URL spoofing,Mentioning URL spoofing which is a fake website that is masked to look like a legitimate source to steal user's data.,1.0,1.0,0.0
+7,access management,Who you allow to use or see your data. For example give your password to your friend.,3.0,3.0,3.0
+8,active digital footprint,The information that you intentionally put online.,3.0,3.0,3.0
+9,attack knowledge (avoiding),"understanding the different types of cyber-attacks (phishing, malware, clicking on suspicious links, etc.) and with that knowledge being able to keep personal data from being comprimsed",3.0,3.0,1.0
+10,attack knowledge (handling),Understanding the different types of cyber-attacks and being able to handle them.,1.0,1.0,1.0
+11,attack knowledge (identifying),Understanding the different types of cyber-attacks and being able to identify them.,3.0,3.0,3.0
+12,average person,,0.0,0.0,1.0
+13,average person (avoiding attacks),"Describes an average person's ability to avoid scam, phishing, spoofing, malware attacks, etc.",1.0,0.0,0.0
+14,average person (awareness of safe cybersecurity practices),Describes an average person's knowledge to use safe cybersecurity practices.,7.0,7.0,2.0
+15,average person (data managing),Describes an average person's ability to manage their personal data securely. Like what you do with your personal data.,3.0,3.0,2.0
+16,average person (good password practices),"Describes an average person's ability to use good password practices (e.g. using different passwords for different accounts, using complex passwords, updating passwords, etc.)",2.0,2.0,1.0
+17,average person (handling threats),Describes an average person's ability to know what to do if a threat occurs.,1.0,1.0,1.0
+18,average person (how to secure information),Describes an average person's approach to protecting their personal information. (steps you take to protect your personal information.),1.0,1.0,1.0
+19,average person (identifying attacks),Describes an average person's ability to identify what is an active cyber-attack.,1.0,0.0,0.0
+20,average person (identifying threats),Describes an average person's ability to identify what is a potential cyber-threat.,5.0,5.0,2.0
+21,average person (learning by experiances),Describes an average person's ability to gain knowledge through their own's or other's experiences.,2.0,2.0,1.0
+22,average person (securing from threats),Describes an average person's approach to protecting their personal information from cyber-threats.,2.0,2.0,1.0
+23,avoid security question (hard to memorize),Avoid the security question becuase the answers are hard to memorize.,2.0,2.0,2.0
+24,aware of safe cybersecurity practices,Someone who is aware of safe general cybersecurity practices but not necessarily practices it.,2.0,2.0,2.0
+25,banking protection,Practice of safe cybersecurity to protect their financial information.,10.0,10.0,8.0
+26,challenges in data privacy,Issues with keeping personal data private while needing to share that data (e.g. keeping their phone number private while they need to share it in their resume). ,1.0,1.0,1.0
+27,clicking on suspicious links,User mentions clicking or not clicking on links which may be a scam.,1.0,1.0,0.0
+28,common sense on not sharing personal information,The basic knowledge to avoid sharing personal information.,4.0,4.0,4.0
+29,companies being negligent,Companies disregard for securing clients personal information.,1.0,1.0,1.0
+30,complex password,"Using passwords include capital and small letters, numbers, signs, etc.",3.0,3.0,3.0
+31,complexity of internet,User inability to fully understand and how to safely use internet.,1.0,1.0,1.0
+32,confidentiality,Keeping personal informaiton private.,2.0,2.0,2.0
+33,cyber-threat awareness?,,0.0,0.0,1.0
+34,cybersecurity definition (data management),"When participants define cybersecurity by being able to collect, store, organize, and maintain data ensuring that the data is accessible, reliable, and secure.",1.0,1.0,1.0
+35,cybersecurity definition (data protection),"When participants define cybersecurity by safe guarding assets, networks, and information in an online environment from unauthorized access, cyber threats, and malicious activities.",1.0,1.0,1.0
+36,cybersecurity definition (online safety),,1.0,1.0,3.0
+37,cybersecurity definition (online security),When participants define cybersecurity by defining security in online environment.,2.0,2.0,0.0
+38,cybersecurity definition (personal data protection),,2.0,2.0,2.0
+39,cybersecurity definition (protect data),,2.0,2.0,0.0
+40,data management,"Collecting, storing, organizing, and maintaining data to ensure that it is accessible, reliable, and secure.",4.0,4.0,4.0
+41,data protection (company),"Practices and technologies used to secure company data from unauthorized access, breaches, and other forms of misuse.",2.0,2.0,2.0
+42,data protection (personal),"Practices and technologies used to secure personal data from unauthorized access, breaches, and other forms of misuse.",15.0,15.0,15.0
+43,data transparency,Wanting to know what companies are doing with the data you provide to them.,8.0,8.0,7.0
+44,different password,Not using a same password for different accounts.,9.0,9.0,8.0
+45,education in school (general knowledge),Learning general (not specified) cybersecurity knowledge and practices in a school setting.,1.0,1.0,1.0
+46,education in school (secure password),"Learning to create and manage strong a password in a school setting. (e.g. using MFA, password manager app, etc.)",2.0,3.0,3.0
+47,education in school (technical knowledge),Learning technical (knowledge you use in a work environment) cybersecurity knowledge and practices in a school setting. ,2.0,2.0,2.0
+48,education through media,"Learning general (not specified) cybersecurity knowledge and practices through News, social media, newspaper, etc.",1.0,1.0,1.0
+49,effort toward secure accounts,Putting in effort into applying good cybersecurity practices to protect their data.,1.0,1.0,1.0
+50,face recognition,Using face recognition as an authentication method.,2.0,2.0,2.0
+51,fingerprint,Using fingerprint identificaiton as an authentication method.,4.0,4.0,4.0
+52,handling threat,The ability to know what to do if a potential threat occurs.,1.0,1.0,1.0
+53,high confidence in avoiding cyber-attack,Being confident in avoiding an active cyber-attack.,3.0,3.0,2.0
+54,high confidence in managing personal data,"Being confident in collecting, storing, organizing, and maintaining data to ensure that it is accessible, reliable, and secure.",1.0,1.0,1.0
+55,high confidence in password generation,Being confident in creating strong passwords.,2.0,2.0,2.0
+56,high confidence in protecting personal information,"Being confident in protecting individuals and systems from online threats, (such as hacking, phishing, and malware). It involves safeguarding personal information, using secure networks, and being cautious about online interactions to prevent unauthorized access and ensure digital security.",6.0,6.0,5.0
+57,high confidence in technical knowledge,"Being confident in having a deep familiarity with various security protocols, threat mitigation strategies, encryption techniques, and the ability to identify and respond to cyber threats effectively. ",2.0,2.0,1.0
+58,identity protection in different countries,Different countries use different forms of protection to keep their citizens identity and data secure and private.,1.0,1.0,0.0
+59,identity theft,,1.0,1.0,1.0
+60,ignoring terms and conditions,"Accept terms and conditions, cookies, etc. without reading them for any reasons.",1.0,1.0,1.0
+61,issues with face recognition (easy to copy),Having devices comprmised because facial recongations are easy to copy.,1.0,1.0,1.0
+62,issues with face recognition (occlusion),"Refers to the challenges that users face when using facial recognition. Participants noted that when part of their faces is covered, they were prevented from logging into their devices.",1.0,1.0,1.0
+63,issues with fingerprint (general),,1.0,1.0,1.0
+64,issues with fingerprint (personal),Refers to the challenges that users face when using fingerprints. Participants noted that they had problems with their own finger which obstructed the scanner and prevented them from logging into their device (e.g. scars on fingers),1.0,1.0,1.0
+65,issues with password (hard to memorize),,3.0,3.0,2.0
+66,issues with password manager apps,Refers to any challenges that users face with password manager applications.,,,
+67,issues with password manager apps (easy to lose access),,1.0,1.0,1.0
+68,issues with passwords (hard to memorize),User finds using passwords difficult because it is hard to remember.,,,
+69,issues with voice recognition (technical),Refers to any challenges that users face with voice recognition systems. (e.g. having similar voices) ,1.0,1.0,1.0
+70,keeping system updated,The practice of consciously installing the newest updates to the devices that you are using. ,1.0,1.0,1.0
+71,lack of attack knowledge (handling),Being unaware of how to identify and respond to attacks on your system due to lack of cybersecurity knowledge.,1.0,1.0,1.0
+72,lack of discernment what to share online,Lack of ability to judge what to share online.,1.0,1.0,1.0
+73,lack of general cybersecurity education,,1.0,1.0,1.0
+74,lack of general cybersecurity education in school,Lack of general cybersecurity education in school.,2.0,2.0,2.0
+75,lack of general cybersecurity knowledge,Being unaware of genrela cybersecurity knowledge and practices.,5.0,5.0,5.0
+76,lack of interdisciplinary cybersecurity fields,The absence or insufficiency of integrated cybersecurity field with other fields of study.,2.0,2.0,2.0
+77,learned hard way (first hand),Gaining cybersecurity knowledge through their own experiences.,2.0,1.0,0.0
+78,learned hard way (second hand),Gaining cybersecurity knowledge through other's experiences.,4.0,5.0,5.0
+79,low confidence (ignoring terms and conditions),Unsure about the risk of ignore reading the terms and conditions.,1.0,1.0,1.0
+80,low confidence (technical knowledge),Lack of confidence in understanding the skills you need in a job.,3.0,3.0,3.0
+81,low confidence (uncertainty about cyber-risks),Unsure about occurance and severity of cybersecurity risks.,1.0,1.0,1.0
+82,low confidence in SSN protection,,1.0,1.0,0.0
+83,low confidence in banking protection,,1.0,1.0,0.0
+84,low confidence in general cybersecurity practices,,1.0,1.0,1.0
+85,low confidence in personal data protection,,1.0,1.0,0.0
+86,low confidence in technical knowledge,,3.0,3.0,2.0
+87,malware experience,"Experiancing installation of any sofware developed by cybercriminals to steal, damage or destroy data.",1.0,1.0,1.0
+88,neglectfulness because of convenience,"Anam and Hoorad changed this code to ""preferred convinience over security"". (Negleglecting the necessary safety measures and precautions to save time and effort.)",0.0,0.0,5.0
+89,not sure about password management,,1.0,1.0,1.0
+90,not sure about password management;,Unaware how to safely store passwords.,,,
+91,not understanding hacker's intention,Unsure about what a hacker does with stolen information and why they do this.,1.0,1.0,1.0
+92,not using MFA (inconvenient),Opt not to use multi-factor authentication because it is time consuming and complex.,,,
+93,open to learn,Willingness to learn about new cybersecurity practices and knowledge. Being adaptable to new information and changing their mindset.,1.0,1.0,0.0
+94,password,Using password as an authentication method.,2.0,2.0,2.0
+95,password attack experience,Experiancing any malicious authentication into password-protected accounts.,1.0,1.0,1.0
+96,password management (safe),Any safe methods to keep track of passwords (e.g. using a password management application).,1.0,1.0,1.0
+97,password management (unsafe),Any unsafe methods to keep track of passwords (e.g. writing on paper).,2.0,2.0,1.0
+98,password recovery,Experiancing of forgeting password and recovering it.,1.0,1.0,1.0
+99,peer influence,"The role of friends, family, or colleagues in encouraging or discouraging good cybersecurity practices.",2.0,1.0,0.0
+100,phishing experience,Experiancing fraudulent emails or text messages to retrieve personal data.,7.0,7.0,6.0
+101,preferred ? over security,,1.0,0.0,0.0
+102,preferred biometrics over password,,1.0,1.0,1.0
+103,preferred convenience over security (MFA),,5.0,5.0,4.0
+104,preferred convenience over security (antivirus),User not choosing to use a systems and/or applications to protect devices because it takes too much effort.,1.0,1.0,0.0
+105,preferred convenience over security (passwords),,2.0,2.0,0.0
+106,preferred convenience over security (terms and conditions),,1.0,1.0,0.0
+107,preferred convinience over security (MFA),Choose not to use MFA because it is incovinient and too much effort. ,,,
+108,preferred convinience over security (passwords),"Choose not to use strong password practices (complex passwords, different passwords, etc.) because it is incovinient and too much effort. ",,,
+109,preferred convinience over security (terms and conditions),Choose not to read agreements or terms and conditions because it is incovinient and too much effort. ,,,
+110,preferred face recognition,,1.0,1.0,1.0
+111,preferred face recognition (easy to use),Choosing to use face recgonition as an authentication method because it is easier to use.,1.0,1.0,1.0
+112,preferred face recognition (reliability),Choosing to use face recgonition as an authentication method because it is more secure.,1.0,1.0,1.0
+113,preferred face recognition over password,Choosing to use face recgonition as an authentication method as opposed to password for authenticating devices or accounts.,1.0,1.0,1.0
+114,preferred fingerprint,,1.0,1.0,1.0
+115,preferred fingerprint (easy to use),Choosing to use fingerprint identification as an authentication method because it is easier to use.,3.0,3.0,3.0
+116,preferred fingerprint (hard to copy),Choosing to use fingerprint identification as an authentication method because fingerprint is a unique feature and impossible to replicate.,1.0,1.0,1.0
+117,preferred fingerprint (reliability),Choosing to use fingerprint identification as an authentication method because it is more secure.,1.0,1.0,1.0
+118,preferred password over biometric (not accessible),Choosing to use password as an authentication method because the biometric sensors aren't available on the device.,1.0,1.0,1.0
+119,preferred password over face recognition  (occlusion),,1.0,1.0,1.0
+120,preferred password over face recognition (occlusion),Choosing to use password as an authentication method as opposed to face recognition for authenticating devices or accounts because of the challenges that users face when using facial recognition (e.g. authentication failure when part of the face covered). ,,,
+121,preferred security over convenience (MFA),Choosing MFA over SFA because of prioritizing system security over simplicity.,4.0,4.0,3.0
+122,preferred security over convenience (password),"Choosing to use strong password practices (complex passwords, different passwords, etc.) because user prioritizes system security over simplicity. ",1.0,1.0,1.0
+123,preferred token (easy to use),Choosing to use digital or physical token as an authentication method because it is easier to use.,2.0,2.0,2.0
+124,random password,Using complex and random passwords that are generated by a program automatically.,1.0,1.0,0.0
+125,repeated password,Using the same password across multiple accounts or devices.,6.0,6.0,6.0
+126,risk prevention (from threats),Being aware of potential cyber risks and understanding how to prevent them.,6.0,6.0,6.0
+127,risk prevention (secured internet),Using a secure network to ensure sensitive information isn't compromised.,1.0,1.0,1.0
+128,security definition (access management),Security is the practice of ensuring that only authorized individuals are permitted to access data.,1.0,1.0,1.0
+129,security definition (confidentiality),Security is the practice of ensuring that the stored data is private.,1.0,1.0,1.0
+130,security definition (data protection),Security is the practice of ensuring that stored data is safe and protected.,1.0,1.0,1.0
+131,security definition (safe from threats),,1.0,1.0,1.0
+132,seeking out cyber knowledge,Putting in effort into learning general cybersecurity knowledge and practices.,1.0,1.0,2.0
+133,simple password,"Using a simple password (e.g. common information, easy to guess, etc.) to secure accounts or devices which is an unsafe practice.",1.0,1.0,1.0
+134,simple password (unimportant account),"Using a simple password (e.g. common information, easy to guess, etc.) to secure unimportant accounts.",1.0,1.0,1.0
+135,technical knowledge is not practical,Having a hard time applying of technical knowledge you learned in a practical setting.,5.0,5.0,5.0
+136,third-party payment,"Users preferring the use of secure third-party payment applications (e.g. PayPal, Google Pay, Apple Pay, etc.) to ensure that banking information stays safe.",4.0,4.0,2.0
+137,token,,3.0,3.0,2.0
+138,training in workplace,Learning basic cybersecurity practices to keep work data safe.,2.0,2.0,2.0
+139,unaware of how to be cybersafe,,1.0,1.0,1.0
+140,unaware of security risks,Lack of knowledge about the potential threat they might face.,5.0,5.0,6.0
+141,underestimating risk,Unable to assess the occurance or severity of a potential threat.,3.0,3.0,3.0
+142,understand importance of MFA but inconvenient,"User knows why MFA's are important and uses them but does not like them due to it being time consuming,",3.0,3.0,3.0
+143,unsafe practices (downloading),"Download unsafe packages, applications,  media, etc. from unknown websites.",1.0,1.0,1.0
+144,unsafe practices (not using antiviruses),Not using antivirus application to protect devices.,1.0,1.0,0.0
+145,updating password,Changing passwords on a schedule to decrease the chance of being hacked.,2.0,2.0,2.0
+146,user blindness,user trusts developer to make system secure.,2.0,2.0,0.0
