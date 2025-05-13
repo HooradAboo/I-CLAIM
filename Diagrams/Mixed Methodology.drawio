@@ -1,9 +1,76 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="26.2.12">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="27.0.5">
   <diagram name="Page-1" id="muHeA2wIN7Br0-n2upKL">
-    <mxGraphModel>
+    <mxGraphModel dx="1352" dy="1868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;fontFamily=Tahoma;" edge="1" parent="1" source="XhsEv_M7SDo-VLpMQ4_O-35" target="XhsEv_M7SDo-VLpMQ4_O-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-35" value="Title Screening" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontFamily=Tahoma;" vertex="1" parent="1">
+          <mxGeometry x="240" y="-990" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;fontFamily=Tahoma;" edge="1" parent="1" source="XhsEv_M7SDo-VLpMQ4_O-37" target="XhsEv_M7SDo-VLpMQ4_O-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-37" value="Duplicate Removal" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontFamily=Tahoma;" vertex="1" parent="1">
+          <mxGeometry x="240" y="-910" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;fontFamily=Tahoma;" edge="1" parent="1" source="XhsEv_M7SDo-VLpMQ4_O-39" target="XhsEv_M7SDo-VLpMQ4_O-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-39" value="Abstract Screening" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontFamily=Tahoma;" vertex="1" parent="1">
+          <mxGeometry x="240" y="-830" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;fontFamily=Tahoma;" edge="1" parent="1" source="XhsEv_M7SDo-VLpMQ4_O-41" target="XhsEv_M7SDo-VLpMQ4_O-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-41" value="Full-Text Screening" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontFamily=Tahoma;" vertex="1" parent="1">
+          <mxGeometry x="240" y="-750" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;fontFamily=Tahoma;" edge="1" parent="1" source="XhsEv_M7SDo-VLpMQ4_O-43" target="XhsEv_M7SDo-VLpMQ4_O-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-43" value="Coding" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontFamily=Tahoma;" vertex="1" parent="1">
+          <mxGeometry x="430" y="-990" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;fontSize=15;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Tahoma;" edge="1" parent="1" source="XhsEv_M7SDo-VLpMQ4_O-45" target="XhsEv_M7SDo-VLpMQ4_O-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="-1040" />
+              <mxPoint x="300" y="-1040" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-45" value="Citation Chaining" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontFamily=Tahoma;" vertex="1" parent="1">
+          <mxGeometry x="610" y="-990" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;fontFamily=Tahoma;" edge="1" parent="1" source="XhsEv_M7SDo-VLpMQ4_O-47" target="XhsEv_M7SDo-VLpMQ4_O-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-47" value="Initial Search" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;fontFamily=Tahoma;" vertex="1" parent="1">
+          <mxGeometry x="80" y="-980" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-48" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;fontFamily=Tahoma;fontStyle=1" edge="1" parent="1" source="XhsEv_M7SDo-VLpMQ4_O-50" target="XhsEv_M7SDo-VLpMQ4_O-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-49" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;fontSize=15;fontFamily=Tahoma;fontStyle=1" edge="1" parent="1" source="XhsEv_M7SDo-VLpMQ4_O-50" target="XhsEv_M7SDo-VLpMQ4_O-45">
+          <mxGeometry x="-0.1351" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-50" value="Is thematic saturation met?" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontFamily=Tahoma;" vertex="1" parent="1">
+          <mxGeometry x="430" y="-915" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;fontFamily=Tahoma;" edge="1" parent="1" source="XhsEv_M7SDo-VLpMQ4_O-52" target="XhsEv_M7SDo-VLpMQ4_O-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-52" value="Analysis and Interpretation of Findings" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontFamily=Tahoma;" vertex="1" parent="1">
+          <mxGeometry x="430" y="-785" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XhsEv_M7SDo-VLpMQ4_O-53" value="Theme Development" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=15;fontFamily=Tahoma;" vertex="1" parent="1">
+          <mxGeometry x="620" y="-767.5" width="150" height="25" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
