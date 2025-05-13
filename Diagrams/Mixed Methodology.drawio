@@ -63,8 +63,8 @@
         <mxCell id="XhsEv_M7SDo-VLpMQ4_O-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="XhsEv_M7SDo-VLpMQ4_O-62" target="XhsEv_M7SDo-VLpMQ4_O-55">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="620" y="-1040" />
-              <mxPoint x="260" y="-1040" />
+              <mxPoint x="620" y="-1020" />
+              <mxPoint x="260" y="-1020" />
             </Array>
           </mxGeometry>
         </mxCell>
