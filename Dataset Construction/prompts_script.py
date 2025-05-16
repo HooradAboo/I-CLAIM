@@ -1,22 +1,17 @@
-import os
-import requests
-import csv
-import json
-import random
-import base64
+import os, csv, json, random, requests
 import fal_client
 from fal_client import InProgress
-
 
 
 # 1) Configs & Paths (unchanged) ...
 MODEL_ID = "FLUX"
 OUTPUT_ROOT = "ProjectRoot"
-NUM_PROMPTS = 1
-NUM_EXPRESSIONS = 20
+NUM_PROMPTS = 2
+NUM_EXPRESSIONS = 5
 SEED_PAD = 6
 PROMPT_PAD = 5
 EXPR_PAD = 3
+FAL_MODEL = "fal-ai/flux-pro/v1.1-ultra"
 
 # 2) Load face_features.json (unchanged) ...
 with open("face_features.json", "r") as file:
@@ -61,27 +56,47 @@ def generate_expression_description():
         f"{expression['Eyebrow']} eyebrows, and {expression['Lips']} lips."
     )
 
+def next_pid(csv_path: str, pad: int = 5) -> str:
+    """Return a zero‑padded PID that has never been used before."""
+    if not os.path.isfile(csv_path):
+        return zero_pad(1, pad)
+    with open(csv_path, newline="", encoding="utf-8") as f:
+        rows = sum(1 for _ in f) - 1      # minus header
+    return zero_pad(rows + 1, pad)
+
+
 def on_queue_update(update):
     """
     Callback if you want to see progress logs from fal_client.
-    This is optional; feel free to remove if not needed.
+    This will only print if `update.logs` is a non‑empty iterable of dicts.
     """
-    if isinstance(update, InProgress):
+    if isinstance(update, InProgress) and update.logs:
         for log_msg in update.logs:
-            print(log_msg["message"])
+            # ensure we have a dict with a "message" key
+            if isinstance(log_msg, dict) and "message" in log_msg:
+                print(log_msg["message"])
 
-def generate_flux_image(prompt):
-    """
-    Calls fal_client.subscribe, which returns a JSON object containing a URL to the image.
-    We then download that image from the URL and return the raw bytes.
-    """
+
+def generate_flux_image(prompt, seed):
     # 1) Subscribe to the model
+    """
+    Call Flux and return the raw image bytes.
+    The same seed yields deterministic output for that prompt.
+    """
     result = fal_client.subscribe(
-        "fal-ai/flux-pro/v1.1-ultra",  # model as first arg
-        arguments={"prompt": prompt},
-        with_logs=True,
+        FAL_MODEL,
+        arguments={
+            "prompt": prompt,
+            "seed": int(seed)          # <- force Flux to reuse this seed
+        },
+        with_logs=False,
         on_queue_update=on_queue_update
     )
+
+    first = result["images"][0]          # dict with a URL
+    img = requests.get(first["url"], timeout=30)
+    img.raise_for_status()
+    return img.content
 
     print("[DEBUG] Full result:", result)
 
@@ -119,57 +134,80 @@ def main():
     os.makedirs(model_dir, exist_ok=True)
 
     prompts_csv_path = os.path.join(model_dir, "prompts.csv")
-    prompts_csv_exists = os.path.isfile(prompts_csv_path)
-    with open(prompts_csv_path, "w", newline="", encoding="utf-8") as prompts_csv:
+    csv_exists = os.path.isfile(prompts_csv_path)
+
+    # 1) Count how many prompts are already on disk
+    if csv_exists:
+        with open(prompts_csv_path, newline="", encoding="utf-8") as f:
+            existing_rows = sum(1 for _ in f) - 1   # subtract header
+    else:
+        existing_rows = 0
+
+    # 1a) Ensure prompts.csv ends with a newline so we append on a new row
+    if csv_exists:
+        with open(prompts_csv_path, "rb+") as f:
+            f.seek(0, os.SEEK_END)
+            if f.tell() > 0:
+                f.seek(-1, os.SEEK_END)
+                last = f.read(1)
+                if last not in (b"\n", b"\r"):
+                    f.write(b"\n")
+
+    # 2) Now open in append mode *after* counting
+    with open(prompts_csv_path, "a", newline="", encoding="utf-8") as prompts_csv:
         writer = csv.writer(prompts_csv)
-        if not prompts_csv_exists:
-            writer.writerow(["PromptID", "SeedID", "Prompt"])
 
-        # Generate each prompt
-        for p_idx in range(1, NUM_PROMPTS + 1):
-            seed_val = random.randint(0, 99999)
-            seed_str = zero_pad(seed_val, SEED_PAD)
-            prompt_str = zero_pad(p_idx, PROMPT_PAD)
+        if not csv_exists:
+            writer.writerow(["PID", "SID", "Prompt"])
 
-            # Build main prompt
-            main_desc = generate_main_description()
+        # 3) Generate your new prompts
+        for i in range(NUM_PROMPTS):
+            # Always pick the next unused PID
+            prompt_index = existing_rows + i + 1
+            prompt_str  = zero_pad(prompt_index, PROMPT_PAD)   # e.g. "00003" or "00004"
+            seed_val     = random.randint(0, 99999)
+            seed_str     = zero_pad(seed_val, SEED_PAD)
+            prefixed_pid = f"P{prompt_str}"
+            prefixed_sid = f"S{seed_str}"
+
+            # build prompt text and write one row
+            main_desc        = generate_main_description()
             full_prompt_text = main_desc + base_instruction
+            writer.writerow([prefixed_pid, prefixed_sid, full_prompt_text])
 
-            writer.writerow([prompt_str, seed_str, full_prompt_text])
-
-            # Create subfolder
+            # 4) Create the folder for this seed+prompt
             folder_name = f"SID{seed_str}_PID{prompt_str}"
             prompt_folder = os.path.join(model_dir, folder_name)
             os.makedirs(prompt_folder, exist_ok=True)
 
+            # 5) Open (or create) expressions.csv for this prompt
             expressions_csv_path = os.path.join(prompt_folder, "expressions.csv")
-            expressions_csv_exists = os.path.isfile(expressions_csv_path)
+            is_new_expr = not os.path.isfile(expressions_csv_path)
             with open(expressions_csv_path, "a", newline="", encoding="utf-8") as expr_csv:
                 expr_writer = csv.writer(expr_csv)
-                if not expressions_csv_exists:
+                if is_new_expr:
                     expr_writer.writerow(["ExpressionID", "ExpressionText"])
 
-                # Generate N expressions
+                # 6) Generate each expression variation
                 for e_idx in range(1, NUM_EXPRESSIONS + 1):
-                    expr_str = zero_pad(e_idx, EXPR_PAD)
-                    expr_description = generate_expression_description()
-                    expr_writer.writerow([expr_str, expr_description])
+                    expr_str    = zero_pad(e_idx, EXPR_PAD)     # e.g. "001"
+                    prefixed_e  = f"E{expr_str}"                # e.g. "E001"
+                    expr_text   = generate_expression_description()
+                    expr_writer.writerow([prefixed_e, expr_text])
 
-                    final_prompt_for_image = f"{full_prompt_text} {expr_description}"
-
-                    # **** HERE IS THE KEY CHANGE: call the API ****
+                    # now call the API with that same expr_text…
+                    final_prompt = f"{full_prompt_text} {expr_text}"
                     try:
-                        image_data = generate_flux_image(final_prompt_for_image)
+                        image_data = generate_flux_image(final_prompt, seed_val)
+                        image_filename = os.path.join(prompt_folder, f"{prefixed_e}.jpg")
+                        with open(image_filename, "wb") as img_file:
+                            img_file.write(image_data)
                     except Exception as e:
-                        print(f"Error generating image for prompt: {final_prompt_for_image}\n{e}")
-                        
+                        print(f"[ERROR] Prompt {prompt_str} Expr {prefixed_e}: {e}")
 
-                    # Save to .jpg
-                    image_filename = os.path.join(prompt_folder, f"exp{expr_str}.jpg")
-                    with open(image_filename, "wb") as img_file:
-                        img_file.write(image_data)
 
     print(f"Done! Generated {NUM_PROMPTS} prompts, each with {NUM_EXPRESSIONS} expressions under: {model_dir}")
+
 
 if __name__ == "__main__":
     main()
