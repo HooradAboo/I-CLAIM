@@ -36,7 +36,7 @@ def count_code_frequencies_detailed(input_path: str, output_path: str):
 
 
 def main():
-    input_file = "/home/ciber/Desktop/I-CLAIM/Code Exporting/Literature Review - Codes.xlsx"
+    input_file = "/home/ciber/Desktop/I-CLAIM/Code Exporting | Survey/Literature Review - Codes & Quotes.xlsx"
     output_file = "Literature Review - Frequencies.xlsx"
     count_code_frequencies_detailed(input_file, output_file)
 

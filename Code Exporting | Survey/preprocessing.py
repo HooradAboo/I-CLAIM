@@ -46,8 +46,8 @@ def clean_and_split_codes(input_path: str, output_path: str):
 
 
 def main():
-    input_file = "/home/ciber/Desktop/I-CLAIM/Code Exporting/Literature Review - Original Codes.xlsx"
-    output_file = "Literature Review - Codes.xlsx"
+    input_file = "/home/ciber/Desktop/I-CLAIM/Code Exporting | Survey/Literature Review - Codes.xlsx"
+    output_file = "Literature Review - Codes & Quotes.xlsx"
     clean_and_split_codes(input_file, output_file)
 
 
